@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Wuxiaobo'blog!
-tagline: wavelet
+tagline: Supporting tagline
 ---
 {% include JB/setup %}
 
