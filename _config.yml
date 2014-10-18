@@ -82,7 +82,7 @@ JB :
   comments :
     provider : disqus
     disqus :
-      short_name : wuxb
+      short_name : wavelet
     livefyre :
       site_id : 123
     intensedebate :
