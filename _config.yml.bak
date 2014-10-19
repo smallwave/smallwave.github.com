@@ -2,7 +2,7 @@
 # For more see: http://jekyllrb.com/docs/permalinks/
 # permalink: /:categories/:year/:month/:day/:title 
 root: /
-permalink: blog/:categories/:year/:month/:day/:title 
+permalink: /:blog/:categories/:year/:month/:day/:title 
 markdown: rdiscount
 paginate: 5
 
