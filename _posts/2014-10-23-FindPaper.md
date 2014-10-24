@@ -12,7 +12,8 @@ tags: ['文献检索']
 #### 1.信息获取： 
 > 一般来说，信息获取可以从google学术，wos等检索工具以及RSS订阅等？
 
-google常用命令，site、filetype，not，and等
+
+> google常用命令，site、filetype，not，and等
 wos是常用的检索工具，例如检索：    
 有关地震和海啸的相关研究，可以用一下检索词：
 
