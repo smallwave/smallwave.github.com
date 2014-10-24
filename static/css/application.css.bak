@@ -63,7 +63,7 @@ h3 {
 .page-navbar {
   margin: 0 auto 6px;
   overflow: hidden;
-  background: #0000CD;
+  background: #FFD700;
 }
 .page-navbar .page-navbar-container {
   margin: 0 7.5%;
