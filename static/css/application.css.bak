@@ -146,12 +146,44 @@ h3 {
 .page-content .post-entry blockquote p {
   font-size: 15px;
 }
+
+.post-main h1,h2,h3,h4{
+	margin-bottom:-10px;
+	margin-top:25px;
+	letter-spacing:2px;}
+	h1{font-size:2.3em;}
+	h3{font-size:22px;}
+	h5,h6{margin-bottom:-10px;}
+	p{word-break:break-all;}
+	img{max-width:100%;height:auto;}
+
+	
+.readall{margin-top:-5px;}
+#post-readall{
+		color:#fff;
+		background:#4d85d1;
+		font-size:17px;
+		margin-left:0;
+		padding:6px 20px;
+		border-radius:4px;
+		border-bottom:0;
+		letter-spacing:2px;
+		transition:background 0.25s;
+		-o-transition:background 0.25s;
+		-webkit-transition:background 0.25s;
+		-moz-transition:background 0.25s;}
+
+#post-readall:hover{background:#00C04D;}
+	
+.fa-chevron-right:before{content:"\f054"}
+
 .page-content .post-footer {
   clear: both;
   font-size: 15px;
   line-height: 20px;
   margin-bottom: 35px;
 }
+
 .page-footer {
   border-top: 1px solid #ddd;
   color: #555;
@@ -161,9 +193,11 @@ h3 {
   padding: 1.5em .5em;
   text-align: center;
 }
+
 .page-footer a {
   color: #1982d1;
 }
+
 .page-footer .page-generator-time {
   padding: 0 3px;
   font-size: 12px;

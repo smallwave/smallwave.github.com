@@ -157,7 +157,7 @@ h3 {
 	p{word-break:break-all;}
 	img{max-width:100%;height:auto;}
 
-	
+
 .readall{margin-top:-5px;}
 #post-readall{
 		color:#fff;
@@ -172,12 +172,9 @@ h3 {
 		-o-transition:background 0.25s;
 		-webkit-transition:background 0.25s;
 		-moz-transition:background 0.25s;}
-
 #post-readall:hover{background:#00C04D;}
-	
-	
-	
-	
+.fa-chevron-right:before{content:"\f054"}
+
 .page-content .post-footer {
   clear: both;
   font-size: 15px;
