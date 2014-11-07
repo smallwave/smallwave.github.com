@@ -155,7 +155,7 @@ h3 {
 	h1{font-size:2.3em;}
 	h3{font-size:22px;}
 	h5,h6{margin-bottom:-10px;}
-	p{word-break:break-all;}
+	p{word-break:word-break;}
 	img{max-width:100%;height:auto;}
 
 
