@@ -142,13 +142,12 @@ h3 {
 .page-content .post-entry {
   padding: 1.5em 0 0;
   font-size: 14px;
-  word-wrap: break-word;
-  overflow: hidden;
+  word-wrap:break-word;
+  word-break:keep-all;
+  overflow:hidden;
 }
 .page-content .post-entry blockquote p {
   font-size: 15px;
-  word-wrap: break-word;
-  overflow: hidden;
 }
 
 .post-main h1,h2,h3,h4{
