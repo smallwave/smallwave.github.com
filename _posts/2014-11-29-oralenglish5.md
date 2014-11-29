@@ -12,6 +12,8 @@ tags: ['口语']
 
 >  Nowadays, global warming is becoming a serious problem all over the world. Are Warnings about Global Warming Unduly Alarmist? Global warming is when the earth heats up (the temperature rises). It happens when greenhouse gases (carbon dioxide, water vapor, nitrous oxide, and methane) trap heat and light from the sun in the earth’s atmosphere, which increases the temperature. This hurts many people, animals, and plants. Many cannot take the change, so they die.
 
+<!--more-->
+
 > NO
 
 > The consequences of global warming can make the global to redistribution of rainfall, melting of glacier and frozen earth, rising sea levels, which affects the balance of eco-system, more dangerous to human food supply and living environment.
