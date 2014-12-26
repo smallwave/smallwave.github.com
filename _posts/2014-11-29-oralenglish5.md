@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "About climate change"
+title: "About Climate Change"
 description: "英文口语"
 category: 'English' 
 tags: ['口语']

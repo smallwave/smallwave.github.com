@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "About Travel benefit"
+title: "About Travel Benefit"
 description: "英文口语"
 category: 'English' 
 tags: ['口语']

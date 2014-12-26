@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "ABOUT  GOAL"
+title: "About  Goal"
 description: "英文口语"
 category: 'English' 
 tags: ['口语']

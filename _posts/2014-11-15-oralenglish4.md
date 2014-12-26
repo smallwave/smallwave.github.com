@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "ABOUT  COOKING"
+title: "About  Cooking"
 description: "英文口语"
 category: 'English' 
 tags: ['口语']

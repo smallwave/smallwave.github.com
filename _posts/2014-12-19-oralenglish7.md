@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "About get from the communication"
+title: "About Get From The Communication"
 description: "英文口语"
 category: 'English' 
 tags: ['口语']

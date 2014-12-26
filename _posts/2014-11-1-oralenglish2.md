@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Chinese New year"
+title: "Chinese New Year"
 description: "英文口语"
 category: 'English' 
 tags: ['口语']
