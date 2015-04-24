@@ -6,7 +6,7 @@ category: 'work'
 tags: ['ShapeFile','IDL','Code']
 ---
 
-ENVI标准格式通过ShapeFile裁剪是数据处理的基本功能，本文实现了其批处理，源代码代码修改来自于[http://www.cnblogs.com/gisoracle/p/3663707.html](http://www.cnblogs.com/gisoracle/p/3663707.html)，感谢gisoracle。
+ENVI标准格式通过ShapeFile裁剪是数据处理的基本功能，本文实现了其批处理，源代码修改自[http://www.cnblogs.com/gisoracle/p/3663707.html](http://www.cnblogs.com/gisoracle/p/3663707.html)，感谢gisoracle。
 
 <!--more-->
 
