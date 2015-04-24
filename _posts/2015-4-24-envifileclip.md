@@ -58,55 +58,52 @@ tags: ['ShapeFile','IDL','Code']
       FOR i = 0,nCount-1 DO BEGIN
         ;**************************************************************************
         ; 1) open HDR Data get Infomation
-    ;**************************************************************************
-    EnviFile = ENVIFilePaths[i]
-    IF STRLEN(EnviFile) EQ 0 THEN RETURN
-    ENVI_OPEN_FILE, EnviFile, r_fid=fid, /no_interactive_query, /no_realize
-    IF fid EQ -1 THEN  RETURN
-    ENVI_FILE_QUERY, fid, file_type=file_type, nl=nl, ns=ns,dims=dims,nb=nb
-    ;**************************************************************************
-    ; 2) open shp data get Infomation
-    ;**************************************************************************
-    IF STRLEN(ShpFilePath) EQ 0 THEN RETURN
-    oshp = OBJ_NEW('IDLffshape',ShpFilePath)
-    oshp->GETPROPERTY,n_entities=n_ent,Attribute_info=attr_info,$
-      n_attributes=n_attr,Entity_type=ent_type
-    roi_shp = LONARR(n_ent)
-    FOR ishp = 0,n_ent-1 DO BEGIN
-      entitie = oshp->GETENTITY(ishp)
-      IF entitie.SHAPE_TYPE EQ 5 THEN BEGIN
-        record = *(entitie.VERTICES)
-        ;Convert map Coordinates
-        ENVI_CONVERT_FILE_COORDINATES,fid,xmap,ymap,record[0,*],record[1,*]
-        ;Creat ROI
-        roi_shp[ishp] = ENVI_CREATE_ROI(ns=ns,nl=nl)
-        ENVI_DEFINE_ROI,roi_shp[ishp],/polygon,xpts=REFORM(xmap),ypts=REFORM(ymap)
-        ;记录X,Y的区间，裁剪用
-        IF ishp EQ 0 THEN BEGIN
-          xMin = ROUND(MIN(xMap,max = xMax))
-          yMin = ROUND(MIN(yMap,max = yMax))
-        ENDIF ELSE BEGIN
-          xMin = xMin < ROUND(MIN(xMap))
-          xMax = xMax > ROUND(MAX(xMap))
-          yMin = yMin < ROUND(MIN(yMap))
-          yMax = yMax > ROUND(MAX(yMap))
-        ENDELSE
-      ENDIF
-      oshp->DESTROYENTITY,entitie
-    ENDFOR;ishp
-    xMin = xMin >0
-    xMax = xMax < ns-1
-    yMin = yMin >0
-    yMax = yMax < nl-1
-    ;**************************************************************************
-    ; 3) output file setting
-    ;**************************************************************************
-    OutFilename = ClipResDirectory + FILE_BASENAME(EnviFile,'.HDR')+'_Clip'
-    out_dims    = [-1,xMin,xMax,yMin,yMax]
-    pos = INDGEN(nb)
-    ENVI_DOIT,'ENVI_SUBSET_VIA_ROI_DOIT',background=0,fid=fid,dims=out_dims,out_name=OutFilename,$
+        ;**************************************************************************
+        EnviFile = ENVIFilePaths[i]
+        IF STRLEN(EnviFile) EQ 0 THEN RETURN
+        ENVI_OPEN_FILE, EnviFile, r_fid=fid, /no_interactive_query, /no_realize
+        IF fid EQ -1 THEN  RETURN
+        ENVI_FILE_QUERY, fid, file_type=file_type, nl=nl, ns=ns,dims=dims,nb=nb
+        ;**************************************************************************
+        ; 2) open shp data get Infomation
+        ;**************************************************************************
+        IF STRLEN(ShpFilePath) EQ 0 THEN RETURN
+        oshp = OBJ_NEW('IDLffshape',ShpFilePath)
+        oshp->GETPROPERTY,n_entities=n_ent,Attribute_info=attr_info,$
+          n_attributes=n_attr,Entity_type=ent_type
+        roi_shp = LONARR(n_ent)
+        FOR ishp = 0,n_ent-1 DO BEGIN
+          entitie = oshp->GETENTITY(ishp)
+          IF entitie.SHAPE_TYPE EQ 5 THEN BEGIN
+            record = *(entitie.VERTICES)
+            ;Convert map Coordinates
+            ENVI_CONVERT_FILE_COORDINATES,fid,xmap,ymap,record[0,*],record[1,*]
+            ;Creat ROI
+            roi_shp[ishp] = ENVI_CREATE_ROI(ns=ns,nl=nl)
+            ENVI_DEFINE_ROI,roi_shp[ishp],/polygon,xpts=REFORM(xmap),ypts=REFORM(ymap)
+            ;记录X,Y的区间，裁剪用
+            IF ishp EQ 0 THEN BEGIN
+              xMin = ROUND(MIN(xMap,max = xMax))
+              yMin = ROUND(MIN(yMap,max = yMax))
+            ENDIF ELSE BEGIN
+              xMin = xMin < ROUND(MIN(xMap))
+              xMax = xMax > ROUND(MAX(xMap))
+              yMin = yMin < ROUND(MIN(yMap))
+              yMax = yMax > ROUND(MAX(yMap))
+            ENDELSE
+          ENDIF
+          oshp->DESTROYENTITY,entitie
+        ENDFOR;ishp
+        xMin = xMin >0
+        xMax = xMax < ns-1
+        yMin = yMin >0
+        yMax = yMax < nl-1
+        ;**************************************************************************
+        ; 3) output file setting
+        ;**************************************************************************
+        OutFilename = ClipResDirectory + FILE_BASENAME(EnviFile,'.HDR')+'_Clip'
+        out_dims    = [-1,xMin,xMax,yMin,yMax]
+        pos = INDGEN(nb)
+        ENVI_DOIT,'ENVI_SUBSET_VIA_ROI_DOIT',background=0,fid=fid,dims=out_dims,out_name=OutFilename,$
       ns = ns, nl = nl,pos=pos,roi_ids=roi_shp
-  ENDFOR
-END
-
-
+      ENDFOR
