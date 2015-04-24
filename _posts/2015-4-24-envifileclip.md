@@ -6,7 +6,7 @@ category: 'work'
 tags: ['ShapeFile','IDL','Code']
 ---
 
-本文实现了ENVI标准格式ShapeFile裁剪批处理功能，代码修改来自于[http://www.cnblogs.com/gisoracle/p/3663707.html](http://www.cnblogs.com/gisoracle/p/3663707.html)
+ENVI标准格式通过ShapeFile裁剪是数据处理的基本功能，本文实现了其批处理，源代码代码修改来自于[http://www.cnblogs.com/gisoracle/p/3663707.html](http://www.cnblogs.com/gisoracle/p/3663707.html)
 
 <!--more-->
 
@@ -16,7 +16,6 @@ tags: ['ShapeFile','IDL','Code']
 
 
 2.代码（需要ENVI+IDL运行  支持批处理）
-
 
 
     ;+
