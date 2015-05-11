@@ -6,7 +6,7 @@ category: 'work'
 tags: ['Access','IDL','Code']
 ---
 
-IDL的DataMiner是通用的ODBC的函数集，支持链接、查询、修改数据库，本程序实现了Access数据库查询功能（SQL语句），其中主要函数（1、CONNECTSQL；2、USESQLCONNECTION；3、DISCONNECTSQL）来源于[http://hesperia.gsfc.nasa.gov/ssw/goes/sxig12/idl/IDAC_source/OdbcSqlx.pro](http://hesperia.gsfc.nasa.gov/ssw/goes/sxig12/idl/IDAC_source/OdbcSqlx.pro)
+用IDL的DataMiner，它是一个开放数据库连接（ ODBC ）接口，借助它IDL用户可快速访问、查询并管理ODBC兼容数据库，同时也支持Oracle、Informix、Sybase、MS SQL Server等大型商用数据库。本程序实现了访问Access数据库查询功能（基于SQL语句），其中主要函数（1、CONNECTSQL；2、USESQLCONNECTION；3、DISCONNECTSQL）来源于[http://hesperia.gsfc.nasa.gov/ssw/goes/sxig12/idl/IDAC_source/OdbcSqlx.pro](http://hesperia.gsfc.nasa.gov/ssw/goes/sxig12/idl/IDAC_source/OdbcSqlx.pro)
 
 <!--more-->
 
