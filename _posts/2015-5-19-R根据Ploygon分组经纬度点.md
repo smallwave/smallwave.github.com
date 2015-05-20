@@ -10,6 +10,7 @@ R根据shapefiles包可以读取Shapefile，并依据sp [访问 ](http://cran.r-
 
 ##### 修改记录：2015.5.20 #####
 
+----------
 
 如果Polygon比较复杂，用shapefiles包出现了问题，可能原因是convert.to.simple简化后，Ploygon的上点的顺序发生变化，所以在取点的位置时，有的点明明在Ploygon里面而没有找到。
 修改：可以用mapTools包readShapeSpatial函数，该函数使shapefiles一下子就转换成SpatialPolygonsDataFrame对象了，该对象也可以直接用于Over函数的参数，该方法更简单的（代码如下），这种方法更简单。
@@ -20,6 +21,7 @@ R根据shapefiles包可以读取Shapefile，并依据sp [访问 ](http://cran.r-
 1、用shapefiles包构建SpatialPolygons对象（慎用）
 - 
 
+----------
 
     library(shapefiles)
     library(sp)
@@ -49,7 +51,7 @@ R根据shapefiles包可以读取Shapefile，并依据sp [访问 ](http://cran.r-
 2、用mapTools包构建SpatialPolygonsDataFrame对象（推荐）
 - 
 
-
+----------
 
     #library(maptools)
     #library(sp)
