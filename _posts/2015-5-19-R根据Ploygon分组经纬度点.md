@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "R根据Ploygon分组Point"
-description: "R根据Ploygon分组Point"
+title: "R根据Polygon分组Point"
+description: "R根据Polygon分组Point"
 category: 'work'
 tags: ['Soil','R','Vecter']
 ---
