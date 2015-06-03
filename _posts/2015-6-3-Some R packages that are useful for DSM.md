@@ -25,13 +25,16 @@ R对土壤数据的制图（digital soil mapping DSM）支持的功能还是比�
 ## GIS ##
 
 
+
 - sp: [http://cran.r-project.org/web/packages/sp/index.html](http://cran.r-project.org/web/packages/sp/index.html).
 - raster: [http://cran.r-project.org/web/packages/raster/index.html](http://cran.r-project.org/web/packages/raster/index.html). 
 - rgdal: [http://cran.r-project.org/web/packages/rgdal/index.html](http://cran.r-project.org/web/packages/rgdal/index.html). 
 - RSAGA: [http://cran.r-project.org/web/packages/RSAGA/index.html](http://cran.r-project.org/web/packages/RSAGA/index.html). 
 - maptools：[http://cran.r-project.org/web/packages/maptools/index.html](http://cran.r-project.org/web/packages/maptools/index.html)
 
+
 ## Modelling ##
+
 
 
 - caret: [http://cran.r-project.org/web/packages/caret/index.html](http://cran.r-project.org/web/packages/caret/index.html). 
@@ -42,13 +45,18 @@ R对土壤数据的制图（digital soil mapping DSM）支持的功能还是比�
 - gstat: [http://cran.r-project.org/web/packages/gstat/](http://cran.r-project.org/web/packages/gstat/). 
 
 
+
 ## Mapping and plotting ##
+
+
 
 
 - ggplot2: [http://cran.r-project.org/web/packages/ggplot2/index.html](http://cran.r-project.org/web/packages/ggplot2/index.html). 
 
 
 ## Specific ##
+
+
 
 
 - GSIF：[http://cran.r-project.org/web/packages/GSIF/index.html](http://cran.r-project.org/web/packages/GSIF/index.html). 
