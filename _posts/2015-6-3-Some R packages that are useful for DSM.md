@@ -3,11 +3,11 @@ layout: post
 title: "一些用于土壤制图的R包（总结）"
 description: "Some R packages"
 category: 'work'
-tags: ['Soil','R','Vecter']
+tags: ['Soil','R']
 ---
 
 
-R对土壤数据的制图（digital soil mapping DSM）支持的功能还是比较全面的，本文主要整理一下最近用到的、不可或缺的R packages，主要分为
+R对土壤数据的制图（digital soil mapping DSM）支持的功能还是比较全面的，本文主要整理一下最近用到的、不可或缺的R packages，主要分为：
 
 - （1）GIS：空间数据（矢量和栅格）处理和分析，包括sp、raster、rgdal、RSAGA、maptools；
 - （2）模型：土壤制图所需要的分类模型，包括caret、Cubist、C5.0、gam、nnet、gstat；
@@ -15,6 +15,8 @@ R对土壤数据的制图（digital soil mapping DSM）支持的功能还是比�
 - （4）专业：包括soilPhysical(如土壤水分特征曲线的分析)，soilTexture，GSIF。
 
 各包具体链接如下：
+
+----------
 
 
 <!--more-->
