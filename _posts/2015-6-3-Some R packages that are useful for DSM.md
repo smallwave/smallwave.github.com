@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "一些用于土壤制图的R包（总结）"
+title: "总结一些用于土壤制图的R包"
 description: "Some R packages"
 category: 'work'
 tags: ['Soil','R']
