@@ -42,7 +42,7 @@ R对土壤数据的制图（digital soil mapping DSM）支持的功能还是比�
 - C5.0: [http://cran.r-project.org/web/packages/C50/index.html](http://cran.r-project.org/web/packages/C50/index.html). 
 - gam: [http://cran.r-project.org/web/packages/gam/index.html](http://cran.r-project.org/web/packages/gam/index.html). 
 - nnet: [http://cran.r-project.org/web/packages/nnet/index.html](http://cran.r-project.org/web/packages/nnet/index.html).
-- gstat: [http://cran.r-project.org/web/packages/gstat/](http://cran.r-project.org/web/packages/gstat/). 
+- gstat: [http://cran.r-project.org/web/packages/gstat/](http://cran.r-project.org/web/packages/gstat/index.html). 
 
 
 
@@ -59,7 +59,7 @@ R对土壤数据的制图（digital soil mapping DSM）支持的功能还是比�
 
 - GSIF：[http://cran.r-project.org/web/packages/GSIF/index.html](http://cran.r-project.org/web/packages/GSIF/index.html). 
 - soilTexture：[http://cran.r-project.org/web/packages/soilTexture/index.html](http://cran.r-project.org/web/packages/soilTexture/index.html). 
-- soilPhysical：[http://cran.r-project.org/web/packages/soilTexture/index.html](http://cran.r-project.org/web/packages/soilTexture/index.html). 
+- soilPhysical：[http://cran.r-project.org/web/packages/soilTexture/index.html](http://cran.r-project.org/web/packages/soilPhysical/index.html). 
 
 
 
