@@ -30,16 +30,7 @@ layout: default
         {{ content }}
     </div>
 </div>
-<div class="post-blank post-pager">
-    <ul class="pager">
-        {% if page.previous %}
-        <li class="previous"><a href="{{ page.previous.url }}">&larr; 上一篇</a></li>
-        {% endif %}
-        {% if page.next %}
-        <li class="next"><a href="{{ page.next.url }}">下一篇 &rarr;</a></li>
-        {% endif %}
-    </ul>
-</div>
+
 
 <!-- JiaThis Button BEGIN -->
 <div class="jiathis_style_32x32">
@@ -53,6 +44,23 @@ layout: default
 </div>
 <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
 <!-- JiaThis Button END -->
+
+<!-- UY BEGIN -->
+<div id="uyan_frame"></div>
+<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js"></script>
+<!-- UY END -->
+
+
+<div class="post-blank post-pager">
+    <ul class="pager">
+        {% if page.previous %}
+        <li class="previous"><a href="{{ page.previous.url }}">&larr; 上一篇</a></li>
+        {% endif %}
+        {% if page.next %}
+        <li class="next"><a href="{{ page.next.url }}">下一篇 &rarr;</a></li>
+        {% endif %}
+    </ul>
+</div>
 
 
 {% include disqus_comments.md %}
