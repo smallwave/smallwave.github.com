@@ -52,7 +52,7 @@ tags: ['Soil','R','Vecter']
 
 ----------
 
-在实际工作中，一行如[1，2，5，4，5],则返回3 和 5，其实我们只要一个最大值作为结果即可，简单修正which1如下：
+在实际工作中，一行如[1，2，5，4，5], which.max则返回3和5，其实我们只要一个最大值作为结果即可，简单修正which1如下：
     
     which1 <- function(row, thresh) # row is a scalar or a vector
     {
@@ -60,7 +60,7 @@ tags: ['Soil','R','Vecter']
             which. <- which.max(row)
         else
             which. <- if(row > thresh) 2 else 1
-        **which.[1]**
+        which.[1]
     }
 
 经测试，目前还没发现问题。
