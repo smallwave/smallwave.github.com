@@ -6,7 +6,7 @@ category: 'work'
 tags: ['Soil','R','Vecter']
 ---
 
-今天用到了R package [earth](http://cran.r-project.org/web/packages/earth/index.html) ,该包有个方法数据挖掘的多元自适应回归样条法(multivariate adaptive regression splines),但是，用该方法来分类时，就会出Bug。如下面的Bug提示信息：
+今天用到了R package [earth](http://cran.r-project.org/web/packages/earth/index.html) ,该包有个数据挖掘的多元自适应回归样条法(multivariate adaptive regression splines),但是，用该方法来分类时，就会出Bug。如下面的Bug提示信息：
 
     Error in ylevels[apply(map.RF, 1, which1)] : 
       invalid subscript type 'list'
@@ -16,11 +16,11 @@ tags: ['Soil','R','Vecter']
 <!--more-->
 
 
-问题描述：
+1、问题描述：
 -
 
 ----------
-  Example：
+  测试Example：
    
     hv_mars <- earth(formula, data = data)
     map.RF <- predict(hv_mars, newdata = ov_data, type = "class")
@@ -43,14 +43,16 @@ tags: ['Soil','R','Vecter']
         which.
     }
 
-    一行一行的看，问题终于找到，如果某一行row的最大值有大于等于2个时候，即返回which.的维数>2，则会出现上述错误。
 
-Bug修正
+一行一行的看，问题终于找到，如果某一行row的最大值有大于等于2个时候，即返回which.的维数>2，则会出现上述错误。
+
+
+2、Bug修正
 -
 
 ----------
 
-    在实际工作中，一行如[1，2，5，4，5],则返回3 和 5，其实我们只要一个最大值作为结果即可，简单修正which1如下：
+在实际工作中，一行如[1，2，5，4，5],则返回3 和 5，其实我们只要一个最大值作为结果即可，简单修正which1如下：
     
     which1 <- function(row, thresh) # row is a scalar or a vector
     {
