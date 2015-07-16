@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "R package【earth】error report"
+title: "R package [earth] error report"
 description: "R根据Polygon分组Point"
 category: 'work'
 tags: ['Soil','R','Vecter']
