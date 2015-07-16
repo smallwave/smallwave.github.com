@@ -3,7 +3,7 @@ layout: post
 title: "R package [earth] error report"
 description: "R根据Polygon分组Point"
 category: 'work'
-tags: ['Soil','R','Vecter']
+tags: ['Soil','R','class']
 ---
 
 今天用到了R package [earth](http://cran.r-project.org/web/packages/earth/index.html) ,该包有个数据挖掘的多元自适应回归样条法(multivariate adaptive regression splines),但是，用该方法来分类时，就会出Bug。如下面的Bug提示信息：
