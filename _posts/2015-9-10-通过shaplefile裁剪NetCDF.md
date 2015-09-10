@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "通过shaplefile裁剪NetCDF"
-description: "NetCDF数据通过""
+description: "NetCDF数据通过"
 category: 'work'
 tags: ['NetCDF','python','Code']
 ---
