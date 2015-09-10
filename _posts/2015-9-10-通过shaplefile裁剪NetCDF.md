@@ -41,8 +41,8 @@ NetCDF（[http://www.unidata.ucar.edu/software/netcdf/](http://www.unidata.ucar.
 
 - gdal计算shapefile 的 四角boundary 和所有点的boundary
 - 其次根据四角boundary subset
-- 在根据所有点boundary 计算netcdf mask并更新到QTP netcdf
-- netcdf4-python将更新后的文件写出来
+- 在根据所有点boundary 计算netcdf mask并更新到QTP netcdf 的mask
+- netcdf4-python将mask后netcdf的文件写出来
 具体code如下：
 
 
