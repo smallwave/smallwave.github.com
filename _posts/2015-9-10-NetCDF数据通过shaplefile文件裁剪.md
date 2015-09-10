@@ -14,7 +14,7 @@ NetCDF（[http://www.unidata.ucar.edu/software/netcdf/](http://www.unidata.ucar.
 
 ----------
 
- 原始示例NetCDF下载地址[http://westdc.westgis.ac.cn/data/7a35329c-c53f-4267-aa07-e0037d913a21](http://westdc.westgis.ac.cn/data/7a35329c-c53f-4267-aa07-e0037d913a21)
+ 示例NetCDF下载地址[http://westdc.westgis.ac.cn/data/7a35329c-c53f-4267-aa07-e0037d913a21](http://westdc.westgis.ac.cn/data/7a35329c-c53f-4267-aa07-e0037d913a21)
 
 > 原始数据：
 
@@ -24,7 +24,7 @@ NetCDF（[http://www.unidata.ucar.edu/software/netcdf/](http://www.unidata.ucar.
 
 
 
-> clip后的数据：
+> 通过青藏高原边界clip后的数据：
 
 ----------
 
