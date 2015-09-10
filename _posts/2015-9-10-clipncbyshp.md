@@ -17,10 +17,17 @@ NetCDF（[http://www.unidata.ucar.edu/software/netcdf/](http://www.unidata.ucar.
  原始示例NetCDF下载地址[http://westdc.westgis.ac.cn/data/7a35329c-c53f-4267-aa07-e0037d913a21](http://westdc.westgis.ac.cn/data/7a35329c-c53f-4267-aa07-e0037d913a21)
 
 > 原始数据：
+
+----------
+
 > ![原始数据](/images/CFMDCHINA.jpg)
 
 
+
 > clip后的数据：
+
+----------
+
 > ![clip后的数据](/images/CFMDQTP.jpg)
 
 
