@@ -6,7 +6,7 @@ category: 'work'
 tags: ['NetCDF','python','Code']
 ---
 
-NetCDF（[http://www.unidata.ucar.edu/software/netcdf/](http://www.unidata.ucar.edu/software/netcdf/)）格式是比较常见的地学数据存储格式,读写NetCDF有很多库，如C++，java，Fortran，但是，很多NetCDF数据都是全球或大区域尺度，存储数据很浪费空间。网上也没有现成的code。所以，本文描述了通过Python调用netcdf（需要[http://code.google.com/p/netcdf4-python/](http://code.google.com/p/netcdf4-python/)支持）融入shapefile来裁剪netcdf数据。
+NetCDF（[http://www.unidata.ucar.edu/software/netcdf/](http://www.unidata.ucar.edu/software/netcdf/)）格式是比较常见的地学数据存储格式,读写NetCDF有很多库，如C++，java，Fortran，但是，很多NetCDF数据都是全球或大区域尺度，存储数据很浪费空间。网上也没有现成的code。本文描述了通过shapefile来裁剪Python的思路（需要[http://code.google.com/p/netcdf4-python/](http://code.google.com/p/netcdf4-python/)支持）。
 
 <!--more-->
 
