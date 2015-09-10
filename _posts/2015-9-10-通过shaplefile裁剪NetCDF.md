@@ -6,7 +6,7 @@ category: 'work'
 tags: ['NetCDF','python','Code']
 ---
 
-NetCDF（[http://www.unidata.ucar.edu/software/netcdf/](http://www.unidata.ucar.edu/software/netcdf/)）格式是比较常见的地学数据存储格式,读写NetCDF有很多库，如C++，java，Fortran，但是，很多NetCDF数据都是全球或大区域尺度，存储数据很浪费空间。网上找了很久也没有找到合适的code。本文描述了通过shapefile来裁剪Python的思路（需要[http://code.google.com/p/netcdf4-python/](http://code.google.com/p/netcdf4-python/)支持）。
+NetCDF（[http://www.unidata.ucar.edu/software/netcdf/](http://www.unidata.ucar.edu/software/netcdf/)）格式是比较常见的地学数据存储格式，但是，很多NetCDF数据都是全球或大区域尺度，存储整个数据很浪费空间（比如中国区域[CFMD数据集](http://westdc.westgis.ac.cn/data/7a35329c-c53f-4267-aa07-e0037d913a21)解压后占据硬盘380多G，而占国土面积1/4的青藏高原裁剪后的CFMD-QTP预计能节约90%的空间），网上找了很久也没有找到合适的裁剪code。本文描述了通过shapefile来裁剪Python的思路（需要[netcdf4-python](http://code.google.com/p/netcdf4-python/)、[gdal](https://pypi.python.org/pypi/GDAL/1.6.1) 等支持）。
 
 <!--more-->
 
@@ -16,7 +16,7 @@ NetCDF（[http://www.unidata.ucar.edu/software/netcdf/](http://www.unidata.ucar.
 
  示例NetCDF下载地址[http://westdc.westgis.ac.cn/data/7a35329c-c53f-4267-aa07-e0037d913a21](http://westdc.westgis.ac.cn/data/7a35329c-c53f-4267-aa07-e0037d913a21)
 
-> 原始数据：
+> 原始数据（130M）：
 
 ----------
 
@@ -24,7 +24,7 @@ NetCDF（[http://www.unidata.ucar.edu/software/netcdf/](http://www.unidata.ucar.
 
 
 
-> 通过青藏高原边界clip后的数据：
+> 通过青藏高原边界clip后的数据（18M）：
 
 ----------
 
@@ -39,9 +39,10 @@ NetCDF（[http://www.unidata.ucar.edu/software/netcdf/](http://www.unidata.ucar.
 
 具体思路如下：
 
-- 计算shapefile 的 四角boundary 和所有点的boundary
+- gdal计算shapefile 的 四角boundary 和所有点的boundary
 - 其次根据四角boundary subset
 - 在根据所有点boundary 计算netcdf mask并更新到QTP netcdf
+- netcdf4-python将更新后的文件写出来
 具体code如下：
 
 
