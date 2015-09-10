@@ -44,6 +44,9 @@ NetCDF（[http://www.unidata.ucar.edu/software/netcdf/](http://www.unidata.ucar.
 - 在根据所有点boundary 计算netcdf mask并更新到QTP netcdf
 具体code如下：
 
+
+----------
+
     ##########################################################################################################
 	# NAME
 	#    SubSetNetCDF.py
