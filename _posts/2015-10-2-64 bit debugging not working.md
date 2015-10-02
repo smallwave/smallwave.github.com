@@ -7,9 +7,9 @@ tags: ['Fortran']
 ---
 
 
-I'm using Intel Visual Fortran Composer XE 2013 SP1 Update 3 and debugging in Visual Studio 2013 Update 2's IDE with this simple program:
-
 ----------
+
+I'm using Intel Visual Fortran Composer XE 2013 SP1 Update 3 and debugging in Visual Studio 2013 Update 2's IDE with this simple program:
 
 	program Console1 
 	implicit none 
