@@ -5,6 +5,5 @@ root: /
 permalink: blog/:categories/:year/:month/:day/:title 
 markdown: kramdown
 paginate: 5
-disqus_shortname:wavelet2008
 
 title: Xiaobo WU's blog

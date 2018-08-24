@@ -38,6 +38,12 @@ layout: default
 <!-- UY END -->
 
 
+{% if site.disqus_shortname %}
+  {% include disqus_comments.html %}
+{% endif %}
+
+
+
 <div class="post-blank post-pager">
     <ul class="pager">
         {% if page.previous %}
