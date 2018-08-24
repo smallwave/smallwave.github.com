@@ -3,7 +3,7 @@
 # permalink: /:categories/:year/:month/:day/:title 
 root: /
 permalink: blog/:categories/:year/:month/:day/:title 
-markdown: rdiscount
+markdown: kramdown
 paginate: 5
 
 title: Xiaobo WU's blog
