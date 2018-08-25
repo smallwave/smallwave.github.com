@@ -24,11 +24,14 @@ tags: ['paper']
 引用：Wu X, Nan Z, Zhao S, Zhao L, Cheng G. Spatial modelling of permafrost distribution and properties on the Qinghai-Tibet Plateau. Permafrost and Periglacial Processes. 2018, 29(2): 86-99. DOI:10.1002/ppp.1971.
 
 
+下载：[官网](https://onlinelibrary.wiley.com/doi/abs/10.1002/ppp.1971)
+
+
 > ![](/images/ppp01.jpg)
 
 图1 模拟得的青藏冻土分布(a)和两幅早先的该区冻土图CHINA2005 (b) 、QTP1996 (c)
 
 
-> ![](/images/ppp01.jpg)
+> ![](/images/ppp02.jpg)
 
 图2 高原多年冻土区的活动层 ALT(a)、年平均地温MAGT (b), 年变化深度(c) 和地下冰含量 (d) 的空间分布格局
